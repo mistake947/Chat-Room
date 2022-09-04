@@ -1,0 +1,95 @@
+ @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap'); 
+    
+/* google fornt import kiya hai */
+* {
+     /* star * is used for select all */
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ min-height: 100vh;
+ background-color: #F8F8F8;
+ /* //font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ; */
+ font-family: 'Roboto', sans-serif; 
+ /* font-family: 'Courier New', Courier, monospace; */
+}
+
+section.chat_section
+{
+    width: 800px;
+    max-width: 90%;
+    /* ye mobile screen ke liye hai puri weathh na le sirf 90 % le */
+    background: #fff;
+    box-shadow:0 10px 15px -3px rgba(0, 0,  0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+.brand {
+    /* chat secttion ke andar hai brand esliye . se access kr rahe hai */
+    padding: 20px;
+    background-color: #f1f1f1;
+    display: flex;
+    align-items: center;
+}
+
+.brand h1 {
+    text-transform: uppercase;
+    font-size: 20px;
+    color: #444;
+    margin-left: 10px;
+     /* ye vo jahagah hai jaha app ka naam likhaa aayega  */
+}
+.message_area{
+     height: 500px;
+     padding: 16px;
+     display: flex;
+     flex-direction: column;
+     /* message area mai message ek ke baad ek dikhe esliye direction coloum kiya hai */
+     overflow-y: auto;
+     overflow-x: hidden;
+     /* overfow nahi honge message y axis mai scrole barr aa jayega */
+     padding-top: 40px;
+}
+textarea {
+    width: 100%;
+    border: none;
+    padding: 20px;
+    font-size: 16px;
+    outline: none;
+    background: #FBFBFB;
+
+}
+.message{
+    padding: 20px;
+    border-radius: 4px;
+    margin-bottom: 40px ;
+    max-width: 300px;
+    position: relative;
+    overflow-wrap: break-word;
+}
+.incoming {
+    background-color: #8F8BE8;
+    color: #fff;
+}
+.outgoing {
+    background: #e9eafd;
+    color: #787986;
+    margin-left: auto;
+    margin-right: 5px;
+    min-width: 200px;
+}
+.message h4{
+    position: absolute;
+    top: -20px;
+     /* box ke upper pull kiya hai  */
+    left: 0;
+    color: #333;
+    min-width: 100px;
+    font-size: 14px;
+    overflow: hidden;
+    /* ye user name hai jo maeesga kisne bheja */
+}
